@@ -22,7 +22,7 @@ const App = ()=>{
         <div className="app" style={{backgroundImage: `url(${backgroundPhoto})`}}>
             <div className="card">
                 <div className="header">{adviceOnScreen}</div>
-                <button className="changeAdvice" onClick={()=>setTimeout(() => {
+                <button className="changeAdviceBtn" onClick={()=>setTimeout(() => {
                     {backgroundApi(); adviceApi();}
                 }, 1000)}>Click</button>
             </div>
